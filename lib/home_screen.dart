@@ -1,12 +1,18 @@
 import 'package:flutter/material.dart';
+import 'package:radiant_residencies_app/navigation_bar.dart';
 
-class LogIn extends StatelessWidget {
-  const LogIn({super.key});
+class HomeScreen extends StatelessWidget {
+  const HomeScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
+        appBar: AppBar(
+          iconTheme: const IconThemeData(color: Colors.white, size: 35.0),
+          backgroundColor: Colors.black,
+        ),
+        drawer: const NavBar(),
         body: Container(
           height: MediaQuery.of(context).size.height,
           width: MediaQuery.of(context).size.width,
@@ -20,16 +26,11 @@ class LogIn extends StatelessWidget {
               alignment: Alignment.topLeft,
             ),
           ),
-          child: Column(
+          child: const Column(
             children: [
-              Padding(
-                padding: const EdgeInsets.only(right: 190),
-                child: Image.asset(
-                  "assets/Korina Claudia.png",
-                  height: 150.0,
-                  width: 150.0,
-                ),
-              )
+              Row(
+                children: [],
+              ),
             ],
           ),
         ),

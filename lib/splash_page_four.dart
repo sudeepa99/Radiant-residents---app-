@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:radiant_residencies_app/splash_page_one.dart';
 
-import 'log_in.dart';
+import 'home_screen.dart';
 
 class SplashScreenFour extends StatefulWidget {
   const SplashScreenFour({super.key});
@@ -16,7 +16,7 @@ class _SplashScreenFourState extends State<SplashScreenFour> {
     Future.delayed(const Duration(seconds: 5)).then((value) => Navigator.push(
         context,
         MaterialPageRoute(
-          builder: (context) => const LogIn(),
+          builder: (context) => const HomeScreen(),
         )));
     super.initState();
   }
