@@ -6,47 +6,63 @@ class NavBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Drawer(
-      child: ListView(
-        padding: EdgeInsets.zero,
-        children: [
-          UserAccountsDrawerHeader(
-            accountName: Text("Sudeepa"),
-            accountEmail: Text("Sudeepa1234nisal@gmail.com"),
-            decoration: BoxDecoration(
-              color: Colors.black,
-              image: DecorationImage(
-                image: NetworkImage(
-                    "https://www.freepik.com/free-photo/sunset-coming-through-windows-hotel_7554073.htm#query=darken%20hotel&position=0&from_view=search&track=ais&uuid=605b74cf-194a-4289-bcbf-0ded1b6eb025"),
-                fit: BoxFit.cover,
+      child: Container(
+        color: Colors.black,
+        child: ListView(
+          padding: EdgeInsets.zero,
+          children: [
+            const UserAccountsDrawerHeader(
+              accountName: Text("Sudeepa"),
+              accountEmail: Text("Sudeepa1234nisal@gmail.com"),
+              decoration: BoxDecoration(
+                color: Color.fromRGBO(189, 101, 19, 1),
               ),
             ),
-          ),
-          ListTile(
-            leading: Icon(Icons.home),
-            title: Text("Home"),
-            onTap: () {},
-          ),
-          ListTile(
-            leading: Icon(Icons.room_service_sharp),
-            title: Text("Services"),
-            onTap: () {},
-          ),
-          ListTile(
-            leading: Icon(Icons.book_online),
-            title: Text("Booking"),
-            onTap: () {},
-          ),
-          ListTile(
-            leading: Icon(Icons.local_offer_sharp),
-            title: Text("Seasonal Offers"),
-            onTap: () {},
-          ),
-          ListTile(
-            leading: Icon(Icons.contact_phone),
-            title: Text("Contact Us"),
-            onTap: () {},
-          )
-        ],
+            ListTile(
+              leading: const Icon(Icons.home),
+              title: const Text("Home",
+                  style: TextStyle(
+                    color: Colors.white,
+                  )),
+              onTap: () {},
+            ),
+            ListTile(
+              leading: const Icon(Icons.room_service_sharp),
+              title: const Text(
+                "Services",
+                style: TextStyle(
+                  fontFamily: "SFPRODISPLAY",
+                  color: Colors.white,
+                ),
+              ),
+              onTap: () {},
+            ),
+            ListTile(
+              leading: const Icon(Icons.book_online),
+              title: const Text("Booking",
+                  style: TextStyle(
+                    color: Colors.white,
+                  )),
+              onTap: () {},
+            ),
+            ListTile(
+              leading: const Icon(Icons.local_offer_sharp),
+              title: const Text("Seasonal Offers",
+                  style: TextStyle(
+                    color: Colors.white,
+                  )),
+              onTap: () {},
+            ),
+            ListTile(
+              leading: const Icon(Icons.contact_phone),
+              title: const Text("Contact Us",
+                  style: TextStyle(
+                    color: Colors.white,
+                  )),
+              onTap: () {},
+            )
+          ],
+        ),
       ),
     );
   }

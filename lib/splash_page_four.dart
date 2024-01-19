@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:radiant_residencies_app/splash_page_one.dart';
 
 import 'home_screen.dart';
 
