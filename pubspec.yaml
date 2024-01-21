@@ -81,6 +81,10 @@ flutter:
   - assets/hotel-lobby (1).jpg
   - assets/luxury-classic-modern-bedroom-suite-hotel.jpg
   - assets/banquet-table-with-snacks.jpg
+  - assets/accomodation2.jpg
+  - assets/foods.jpg
+  - assets/function.jpg
+  - assets/swimming-pool.jpg
 
 
   # An image asset can refer to one or more resolution-specific "variants", see

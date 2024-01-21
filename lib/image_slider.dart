@@ -3,6 +3,8 @@ import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 
 class MainCarousel extends StatefulWidget {
+  const MainCarousel({super.key});
+
   @override
   _MainCarouselState createState() => _MainCarouselState();
 }
@@ -76,8 +78,9 @@ class _MainCarouselState extends State<MainCarousel> {
         CarouselSlider(
           items: imageSliders,
           options: CarouselOptions(
-            height: screenSize.height /
-                2, // Adjust the height according to your needs
+            height: screenSize.height / 2,
+            enlargeCenterPage:
+                true, // Adjust the height according to your needs
             aspectRatio: 16 / 9, // Adjust the aspectRatio for width
             autoPlay: true,
             onPageChanged: (index, reason) {

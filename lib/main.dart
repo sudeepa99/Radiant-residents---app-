@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:radiant_residencies_app/services.dart';
 import 'package:radiant_residencies_app/welcome_page.dart';
 
 void main() {
@@ -17,7 +18,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const WelcomePage(),
+      home: const ServiceScreen(),
     );
   }
 }

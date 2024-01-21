@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:radiant_residencies_app/home_screen.dart';
+import 'package:radiant_residencies_app/services.dart';
 
 class NavBar extends StatelessWidget {
   const NavBar({super.key});
@@ -24,7 +26,13 @@ class NavBar extends StatelessWidget {
                   style: TextStyle(
                     color: Colors.white,
                   )),
-              onTap: () {},
+              onTap: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => const HomeScreen(),
+                    ));
+              },
             ),
             ListTile(
               leading: const Icon(Icons.room_service_sharp),
@@ -35,7 +43,12 @@ class NavBar extends StatelessWidget {
                   color: Colors.white,
                 ),
               ),
-              onTap: () {},
+              onTap: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => const ServiceScreen()));
+              },
             ),
             ListTile(
               leading: const Icon(Icons.book_online),

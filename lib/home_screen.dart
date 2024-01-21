@@ -3,12 +3,16 @@ import 'package:radiant_residencies_app/image_slider.dart';
 import 'package:radiant_residencies_app/main_carousel.dart';
 import 'package:radiant_residencies_app/navigation_bar.dart';
 
-class HomeScreen extends StatelessWidget {
+class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
 
   @override
+  State<HomeScreen> createState() => _HomeScreenState();
+}
+
+class _HomeScreenState extends State<HomeScreen> {
+  @override
   Widget build(BuildContext context) {
-    var mainCarousel = MainCarousel;
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
