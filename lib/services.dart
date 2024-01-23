@@ -32,98 +32,102 @@ class ServiceScreen extends StatelessWidget {
             ),
             child: SingleChildScrollView(
               child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
+                crossAxisAlignment: CrossAxisAlignment.center,
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
-                  SingleChildScrollView(
-                    child: Column(
-                      children: [
-                        Padding(
-                          padding: EdgeInsets.fromLTRB(0, 0, 20, 15),
-                          child: Text(
-                            "OUR SERVICES",
-                            style: TextStyle(
-                              color: Color.fromRGBO(189, 101, 19, 1),
-                              fontSize: 28.0,
-                              fontWeight: FontWeight.bold,
-                            ),
-                          ),
-                        ),
-                        Padding(
-                          padding: EdgeInsets.only(left: 20, bottom: 25),
-                          child: Text(
-                            "Discover a world of convenience and comfort with our array of services designed to elevate your hotel booking experience. From seamless reservations to personalized amenities, we strive to make your stay memorable and stress-free.",
-                            textAlign: TextAlign.left,
-                            style: TextStyle(
-                              color: Colors.white,
-                              fontSize: 20.0,
-                            ),
-                          ),
-                        ),
-                        Image.asset(
-                          "assets/accomodation2.jpg",
-                          width: 300,
-                          height: 300,
-                          fit: BoxFit.cover,
-                        ),
-                        Text(
-                          "Luxury Accomodation",
-                          style: TextStyle(
-                            color: Colors.white,
-                            fontSize: 22.0,
-                          ),
-                        ),
-                        SizedBox(
-                          height: 30,
-                        ),
-                        Image.asset(
-                          "assets/foods.jpg",
-                          width: 300,
-                          height: 300,
-                          fit: BoxFit.cover,
-                        ),
-                        Text(
-                          "Savoring Foods",
-                          style: TextStyle(
-                            color: Colors.white,
-                            fontSize: 22.0,
-                          ),
-                        ),
-                        SizedBox(
-                          height: 30,
-                        ),
-                        Image.asset(
-                          "assets/swimming-pool.jpg",
-                          width: 300,
-                          height: 300,
-                          fit: BoxFit.cover,
-                        ),
-                        Text(
-                          "Sparkling Pool",
-                          style: TextStyle(
-                            color: Colors.white,
-                            fontSize: 22.0,
-                          ),
-                        ),
-                        SizedBox(
-                          height: 30,
-                        ),
-                        Image.asset(
-                          "assets/function.jpg",
-                          width: 300,
-                          height: 300,
-                          fit: BoxFit.cover,
-                        ),
-                        Text(
-                          "Memorable Events",
-                          style: TextStyle(
-                            color: Colors.white,
-                            fontSize: 22.0,
-                          ),
-                        ),
-                      ],
+                  Padding(
+                    padding: EdgeInsets.fromLTRB(0, 0, 20, 15),
+                    child: Text(
+                      "OUR SERVICES",
+                      style: TextStyle(
+                        color: Color.fromRGBO(189, 101, 19, 1),
+                        fontSize: 28.0,
+                        fontWeight: FontWeight.bold,
+                      ),
                     ),
                   ),
+                  Padding(
+                    padding: EdgeInsets.only(left: 20, bottom: 25),
+                    child: Text(
+                      "Discover a world of convenience and comfort with our array of services designed to elevate your hotel booking experience. From seamless reservations to personalized amenities, we strive to make your stay memorable and stress-free.",
+                      textAlign: TextAlign.left,
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 20.0,
+                      ),
+                    ),
+                  ),
+                  Image.asset(
+                    "assets/accomodation2.jpg",
+                    width: 300,
+                    height: 300,
+                    fit: BoxFit.cover,
+                  ),
+                  Text(
+                    "Luxury Accomodation",
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 22.0,
+                    ),
+                  ),
+                  SizedBox(
+                    height: 30,
+                  ),
+                  Image.asset(
+                    "assets/foods.jpg",
+                    width: 300,
+                    height: 300,
+                    fit: BoxFit.cover,
+                  ),
+                  Text(
+                    "Savoring Foods",
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 22.0,
+                    ),
+                  ),
+                  SizedBox(
+                    height: 30,
+                  ),
+                  Image.asset(
+                    "assets/swimming-pool.jpg",
+                    width: 300,
+                    height: 300,
+                    fit: BoxFit.cover,
+                  ),
+                  Text(
+                    "Sparkling Pool",
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 22.0,
+                    ),
+                  ),
+                  SizedBox(
+                    height: 30,
+                  ),
+                  Image.asset(
+                    "assets/function.jpg",
+                    width: 300,
+                    height: 300,
+                    fit: BoxFit.cover,
+                  ),
+                  Text(
+                    "Memorable Events",
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 22.0,
+                    ),
+                  ),
+                  SizedBox(
+                    height: 50,
+                  ),
+                  Text(
+                    "Lanka",
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 22.0,
+                    ),
+                  )
                 ],
               ),
             ),
