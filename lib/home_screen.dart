@@ -35,11 +35,11 @@ class _HomeScreenState extends State<HomeScreen> {
                 alignment: Alignment.topLeft,
               ),
             ),
-            child: Column(
+            child: const Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               mainAxisAlignment: MainAxisAlignment.start,
               children: [
-                const Column(
+                Column(
                   children: [
                     Padding(
                       padding: EdgeInsets.fromLTRB(0, 0, 20, 15),
@@ -67,7 +67,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 ),
 
                 Padding(
-                  padding: const EdgeInsets.only(top: 50),
+                  padding: EdgeInsets.only(top: 50),
                   child: MainCarousel(),
                 ),
                 // Text(

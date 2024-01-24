@@ -35,7 +35,7 @@ class ServiceScreen extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.center,
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
-                  Padding(
+                  const Padding(
                     padding: EdgeInsets.fromLTRB(0, 0, 20, 15),
                     child: Text(
                       "OUR SERVICES",
@@ -46,7 +46,7 @@ class ServiceScreen extends StatelessWidget {
                       ),
                     ),
                   ),
-                  Padding(
+                  const Padding(
                     padding: EdgeInsets.only(left: 20, bottom: 25),
                     child: Text(
                       "Discover a world of convenience and comfort with our array of services designed to elevate your hotel booking experience. From seamless reservations to personalized amenities, we strive to make your stay memorable and stress-free.",
@@ -63,14 +63,14 @@ class ServiceScreen extends StatelessWidget {
                     height: 300,
                     fit: BoxFit.cover,
                   ),
-                  Text(
+                  const Text(
                     "Luxury Accomodation",
                     style: TextStyle(
                       color: Colors.white,
                       fontSize: 22.0,
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 30,
                   ),
                   Image.asset(
@@ -79,14 +79,14 @@ class ServiceScreen extends StatelessWidget {
                     height: 300,
                     fit: BoxFit.cover,
                   ),
-                  Text(
+                  const Text(
                     "Savoring Foods",
                     style: TextStyle(
                       color: Colors.white,
                       fontSize: 22.0,
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 30,
                   ),
                   Image.asset(
@@ -95,14 +95,14 @@ class ServiceScreen extends StatelessWidget {
                     height: 300,
                     fit: BoxFit.cover,
                   ),
-                  Text(
+                  const Text(
                     "Sparkling Pool",
                     style: TextStyle(
                       color: Colors.white,
                       fontSize: 22.0,
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 30,
                   ),
                   Image.asset(
@@ -111,17 +111,17 @@ class ServiceScreen extends StatelessWidget {
                     height: 300,
                     fit: BoxFit.cover,
                   ),
-                  Text(
+                  const Text(
                     "Memorable Events",
                     style: TextStyle(
                       color: Colors.white,
                       fontSize: 22.0,
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 50,
                   ),
-                  Text(
+                  const Text(
                     "Lanka",
                     style: TextStyle(
                       color: Colors.white,

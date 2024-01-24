@@ -2,7 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:radiant_residencies_app/navigation_bar.dart';
 
 class ContactPage extends StatelessWidget {
-  const ContactPage({super.key});
+  // final List<String> emails = [
+  //   "General Inquiries : info@radiantreshotel.com",
+  //   "Reservations : reservations@radiantres.com"
+  // ];
+  ContactPage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -39,7 +43,7 @@ class ContactPage extends StatelessWidget {
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsets.only(top: 10),
+                  padding: EdgeInsets.only(top: 60),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.start,
                     crossAxisAlignment: CrossAxisAlignment.start,
@@ -49,7 +53,7 @@ class ContactPage extends StatelessWidget {
                         style: TextStyle(fontSize: 18, color: Colors.white),
                       ),
                       Padding(
-                        padding: EdgeInsets.only(left: 30, bottom: 10),
+                        padding: EdgeInsets.only(left: 30, bottom: 25),
                         child: Text(
                           "Radiant Residence Hotel,\n123 Serene Street,\nCityville,\nState 12345,\nEngland.",
                           style: TextStyle(fontSize: 18, color: Colors.white),
@@ -58,21 +62,79 @@ class ContactPage extends StatelessWidget {
                     ],
                   ),
                 ),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.start,
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text(
-                      "Phone:",
-                      style: TextStyle(fontSize: 18, color: Colors.white),
-                    ),
-                    Padding(
-                      padding: EdgeInsets.only(left: 45),
-                      child: Text(
-                        "+92342367895\n+92567834567",
+                Padding(
+                  padding: EdgeInsets.only(bottom: 25),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        "Phone:",
                         style: TextStyle(fontSize: 18, color: Colors.white),
                       ),
-                    )
+                      Padding(
+                        padding: EdgeInsets.only(left: 45),
+                        child: Text(
+                          "+92342367895\n+92567834567",
+                          style: TextStyle(fontSize: 18, color: Colors.white),
+                        ),
+                      )
+                    ],
+                  ),
+                ),
+                Padding(
+                  padding: EdgeInsets.only(bottom: 25),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        "Email:",
+                        style: TextStyle(fontSize: 18, color: Colors.white),
+                      ),
+                      Padding(
+                        padding: EdgeInsets.only(left: 52),
+                        child: Text(
+                          "info@radianthotel.com\nreservations@radiant.com",
+                          style: TextStyle(
+                            fontSize: 18,
+                            color: Colors.white,
+                          ),
+                        ),
+                      )
+                    ],
+                  ),
+                ),
+                Column(
+                  children: [
+                    Padding(
+                      padding: EdgeInsets.only(right: 250),
+                      child: Text(
+                        "Social Media:",
+                        style: TextStyle(fontSize: 18, color: Colors.white),
+                      ),
+                    ),
+                    Padding(
+                      padding: EdgeInsets.only(left: 55),
+                      child: Text(
+                        "Facebook: @RadiantHotel",
+                        style: TextStyle(fontSize: 18, color: Colors.white),
+                      ),
+                    ),
+                    Padding(
+                      padding: EdgeInsets.only(left: 40),
+                      child: Text(
+                        "Twitter: @Radiant_Hotel",
+                        style: TextStyle(fontSize: 18, color: Colors.white),
+                      ),
+                    ),
+                    Padding(
+                      padding: EdgeInsets.only(left: 60),
+                      child: Text(
+                        "Instagram: @radiant_hotel",
+                        style: TextStyle(fontSize: 18, color: Colors.white),
+                      ),
+                    ),
                   ],
                 )
               ],
