@@ -6,7 +6,7 @@ class ContactPage extends StatelessWidget {
   //   "General Inquiries : info@radiantreshotel.com",
   //   "Reservations : reservations@radiantres.com"
   // ];
-  ContactPage({super.key});
+  const ContactPage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -37,7 +37,7 @@ class ContactPage extends StatelessWidget {
                 Padding(
                   padding: EdgeInsets.only(top: 12),
                   child: Text(
-                    "Welcome to Radiant Residence Hotel. We are delighted to assist you with any inquiries or requests you may have. Please feel free to reach out to us through the following channels:",
+                    "Welcome to Radiant Residencies Hotel. We are delighted to assist you with any inquiries or requests you may have. Please feel free to reach out to us through the following channels:",
                     textAlign: TextAlign.left,
                     style: TextStyle(fontSize: 18, color: Colors.white),
                   ),
@@ -55,7 +55,7 @@ class ContactPage extends StatelessWidget {
                       Padding(
                         padding: EdgeInsets.only(left: 30, bottom: 25),
                         child: Text(
-                          "Radiant Residence Hotel,\n123 Serene Street,\nCityville,\nState 12345,\nEngland.",
+                          "Radiant Residencies Hotel,\n123 Serene Street,\nCityville,\nState 12345,\nEngland.",
                           style: TextStyle(fontSize: 18, color: Colors.white),
                         ),
                       ),

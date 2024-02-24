@@ -1,7 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:radiant_residencies_app/accomodation.dart';
+import 'package:radiant_residencies_app/events.dart';
+import 'package:radiant_residencies_app/foods.dart';
 import 'package:radiant_residencies_app/image_slider.dart';
 import 'package:radiant_residencies_app/main_carousel.dart';
 import 'package:radiant_residencies_app/navigation_bar.dart';
+import 'package:radiant_residencies_app/pool.dart';
 
 class ServiceScreen extends StatelessWidget {
   const ServiceScreen({super.key});
@@ -57,77 +61,125 @@ class ServiceScreen extends StatelessWidget {
                       ),
                     ),
                   ),
-                  Image.asset(
-                    "assets/accomodation2.jpg",
-                    width: 300,
-                    height: 300,
-                    fit: BoxFit.cover,
+                  ElevatedButton(
+                      style: ElevatedButton.styleFrom(
+                        primary: Colors.transparent,
+                      ),
+                      onPressed: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => const Accomodation()));
+                      },
+                      child: Column(
+                        children: [
+                          Image.asset(
+                            "assets/accomodation2.jpg",
+                            width: 300,
+                            height: 300,
+                            fit: BoxFit.cover,
+                          ),
+                          const Text(
+                            "Luxury Accommodation",
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 22.0,
+                            ),
+                          ),
+                        ],
+                      )),
+                  const SizedBox(
+                    height: 30,
                   ),
-                  const Text(
-                    "Luxury Accomodation",
-                    style: TextStyle(
-                      color: Colors.white,
-                      fontSize: 22.0,
+                  ElevatedButton(
+                    style:
+                        ElevatedButton.styleFrom(primary: Colors.transparent),
+                    onPressed: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => const Foods()));
+                    },
+                    child: Column(
+                      children: [
+                        Image.asset(
+                          "assets/foods.jpg",
+                          width: 300,
+                          height: 300,
+                          fit: BoxFit.cover,
+                        ),
+                        const Text(
+                          "Savoring Foods",
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 22.0,
+                          ),
+                        ),
+                      ],
                     ),
                   ),
                   const SizedBox(
                     height: 30,
                   ),
-                  Image.asset(
-                    "assets/foods.jpg",
-                    width: 300,
-                    height: 300,
-                    fit: BoxFit.cover,
-                  ),
-                  const Text(
-                    "Savoring Foods",
-                    style: TextStyle(
-                      color: Colors.white,
-                      fontSize: 22.0,
+                  ElevatedButton(
+                    style: ElevatedButton.styleFrom(
+                      primary: Colors.transparent,
+                    ),
+                    onPressed: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => const Pool()));
+                    },
+                    child: Column(
+                      children: [
+                        Image.asset(
+                          "assets/swimming-pool.jpg",
+                          width: 300,
+                          height: 300,
+                          fit: BoxFit.cover,
+                        ),
+                        const Text(
+                          "Sparkling Pool",
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 22.0,
+                          ),
+                        ),
+                      ],
                     ),
                   ),
                   const SizedBox(
                     height: 30,
                   ),
-                  Image.asset(
-                    "assets/swimming-pool.jpg",
-                    width: 300,
-                    height: 300,
-                    fit: BoxFit.cover,
-                  ),
-                  const Text(
-                    "Sparkling Pool",
-                    style: TextStyle(
-                      color: Colors.white,
-                      fontSize: 22.0,
+                  ElevatedButton(
+                    style: ElevatedButton.styleFrom(
+                      primary: Colors.transparent,
+                    ),
+                    onPressed: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => const EventsScreen()));
+                    },
+                    child: Column(
+                      children: [
+                        Image.asset(
+                          "assets/function.jpg",
+                          width: 300,
+                          height: 300,
+                          fit: BoxFit.cover,
+                        ),
+                        const Text(
+                          "Memorable Events",
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 22.0,
+                          ),
+                        ),
+                      ],
                     ),
                   ),
-                  const SizedBox(
-                    height: 30,
-                  ),
-                  Image.asset(
-                    "assets/function.jpg",
-                    width: 300,
-                    height: 300,
-                    fit: BoxFit.cover,
-                  ),
-                  const Text(
-                    "Memorable Events",
-                    style: TextStyle(
-                      color: Colors.white,
-                      fontSize: 22.0,
-                    ),
-                  ),
-                  const SizedBox(
-                    height: 50,
-                  ),
-                  const Text(
-                    "Lanka",
-                    style: TextStyle(
-                      color: Colors.white,
-                      fontSize: 22.0,
-                    ),
-                  )
                 ],
               ),
             ),
