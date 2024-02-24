@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:radiant_residencies_app/image_slider.dart';
-import 'package:radiant_residencies_app/main_carousel.dart';
 import 'package:radiant_residencies_app/navigation_bar.dart';
 
 class HomeScreen extends StatefulWidget {
