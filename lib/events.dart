@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:radiant_residencies_app/image_slider_events.dart';
 import 'package:radiant_residencies_app/navigation_bar.dart';
 
 class EventsScreen extends StatelessWidget {
@@ -97,6 +98,10 @@ class EventsScreen extends StatelessWidget {
                 ),
               ),
             ),
+            SizedBox(
+              height: 40,
+            ),
+            MainCarouselEvent(),
           ],
         ),
       ),

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:radiant_residencies_app/image_slider_pool.dart';
 import 'package:radiant_residencies_app/navigation_bar.dart';
 
 class Pool extends StatelessWidget {
@@ -36,6 +37,10 @@ class Pool extends StatelessWidget {
                 fontSize: 20.0,
               ),
             ),
+            SizedBox(
+              height: 60,
+            ),
+            MainCarouselPool(),
           ],
         ),
       ),

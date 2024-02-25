@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:radiant_residencies_app/image_slider_food.dart';
 import 'package:radiant_residencies_app/navigation_bar.dart';
 
 class Foods extends StatelessWidget {
@@ -137,6 +138,10 @@ class Foods extends StatelessWidget {
                 ),
               ),
             ),
+            SizedBox(
+              height: 40,
+            ),
+            MainCarouselFood(),
           ],
         ),
       ),
