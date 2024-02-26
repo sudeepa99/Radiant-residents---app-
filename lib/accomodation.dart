@@ -23,7 +23,7 @@ class Accomodation extends StatelessWidget {
       drawer: const NavBar(),
       body: Container(
         padding: const EdgeInsets.fromLTRB(25, 0, 25, 0),
-        height: MediaQuery.of(context).size.height,
+        //height: MediaQuery.of(context).size.height,
         width: MediaQuery.of(context).size.width,
         decoration: BoxDecoration(
           image: DecorationImage(
