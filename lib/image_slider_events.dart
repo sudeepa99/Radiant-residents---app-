@@ -34,7 +34,9 @@ class _MainCarouselEventState extends State<MainCarouselEvent> {
   final List<String> images = [
     "assets/party1 (1).jpg",
     "assets/party1 (2).jpg",
-    "assets/party1 (3).jpg"
+    "assets/party1 (3).jpg",
+    "assets/1720.jpg",
+    "assets/2148016851.jpg"
   ];
 
   List<Widget> generateImageTiles(screenSize) {
