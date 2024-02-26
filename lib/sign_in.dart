@@ -192,6 +192,41 @@ class _SignInPageState extends State<SignInPage> {
                         ),
                       ),
                     ),
+                    const SizedBox(
+                      height: 20,
+                    ),
+                    Expanded(
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Text(
+                            "If you are not registered",
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 20,
+                            ),
+                          ),
+                          ElevatedButton(
+                            onPressed: () {
+                              // Navigator.push(context,
+                              //     MaterialPageRoute(builder: (context) => SignUp()));
+                            },
+                            style: ButtonStyle(
+                              backgroundColor: MaterialStateProperty.all<Color>(
+                                Colors.transparent,
+                              ),
+                            ),
+                            child: const Text(
+                              "Sign Up",
+                              style: TextStyle(
+                                fontSize: 22.0,
+                                color: Color(0xFFFF7817),
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
                   ],
                 ),
               ),
