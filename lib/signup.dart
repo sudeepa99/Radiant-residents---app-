@@ -1,18 +1,18 @@
 import 'package:flutter/material.dart';
-import 'package:radiant_residencies_app/signup.dart';
+import 'package:radiant_residencies_app/sign_in.dart';
 
-class SignInPage extends StatefulWidget {
-  const SignInPage({super.key});
+class SignUpPage extends StatefulWidget {
+  const SignUpPage({super.key});
 
   @override
-  State<SignInPage> createState() => _SignInPageState();
+  State<SignUpPage> createState() => _SignUpPageState();
 }
 
-class _SignInPageState extends State<SignInPage> {
-  final GlobalKey<FormState> formKey1 = GlobalKey<FormState>();
-  TextEditingController _usernameController = TextEditingController();
+class _SignUpPageState extends State<SignUpPage> {
+  final GlobalKey<FormState> formKey2 = GlobalKey<FormState>();
 
   TextEditingController _passwordController = TextEditingController();
+  TextEditingController _emailController = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
@@ -48,7 +48,7 @@ class _SignInPageState extends State<SignInPage> {
                       padding: EdgeInsets.only(top: 10),
                       child: Center(
                         child: Text(
-                          "Sign In",
+                          "Sign Up",
                           style: TextStyle(
                             fontSize: 34.0,
                             fontWeight: FontWeight.bold,
@@ -61,7 +61,7 @@ class _SignInPageState extends State<SignInPage> {
                       padding:
                           const EdgeInsets.only(top: 25, left: 20, right: 25),
                       child: Form(
-                        key: formKey1,
+                        key: formKey2,
                         child: Column(
                           mainAxisAlignment: MainAxisAlignment.center,
                           crossAxisAlignment: CrossAxisAlignment.center,
@@ -69,7 +69,7 @@ class _SignInPageState extends State<SignInPage> {
                             const Padding(
                               padding: EdgeInsets.only(right: 200.0),
                               child: Text(
-                                "User Name*",
+                                "Email",
                                 style: TextStyle(
                                   fontSize: 18.0,
                                   fontWeight: FontWeight.bold,
@@ -78,41 +78,43 @@ class _SignInPageState extends State<SignInPage> {
                               ),
                             ),
                             TextFormField(
-                              cursorColor: Colors.white,
-                              style: const TextStyle(
-                                color: Colors.white,
-                              ),
-                              decoration: InputDecoration(
-                                hintText: "User Name",
-                                contentPadding:
-                                    const EdgeInsets.fromLTRB(10, 10, 0, 0),
-                                enabledBorder: OutlineInputBorder(
-                                  borderRadius: BorderRadius.circular(
-                                    10.0,
+                                cursorColor: Colors.white,
+                                style: const TextStyle(
+                                  color: Colors.white,
+                                ),
+                                decoration: InputDecoration(
+                                  hintText: "Email",
+                                  contentPadding:
+                                      const EdgeInsets.fromLTRB(10, 10, 0, 0),
+                                  enabledBorder: OutlineInputBorder(
+                                    borderRadius: BorderRadius.circular(
+                                      10.0,
+                                    ),
+                                    borderSide: const BorderSide(
+                                      color: Color(0xFFFF7817),
+                                    ),
                                   ),
-                                  borderSide: const BorderSide(
-                                    color: Color(0xFFFF7817),
+                                  focusedBorder: OutlineInputBorder(
+                                    borderRadius: BorderRadius.circular(
+                                      10.0,
+                                    ),
+                                    borderSide: const BorderSide(
+                                      color: Color(0xFFFF7817),
+                                    ),
                                   ),
                                 ),
-                                focusedBorder: OutlineInputBorder(
-                                  borderRadius: BorderRadius.circular(
-                                    10.0,
-                                  ),
-                                  borderSide: const BorderSide(
-                                    color: Color(0xFFFF7817),
-                                  ),
-                                ),
-                              ),
-                              controller: _usernameController,
-                              validator: (text) {
-                                if (text == null || text.isEmpty) {
-                                  return 'Please enter your name';
-                                } else if (text.length < 6) {
-                                  return 'User name must be atleast five characters';
-                                }
-                                return null;
-                              },
-                            ),
+                                controller: _emailController,
+                                validator: (emailAdd) {
+                                  if (emailAdd == null || emailAdd.isEmpty) {
+                                    return 'Please enter your email address';
+                                  }
+                                  if (!RegExp(
+                                          r'^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$')
+                                      .hasMatch(emailAdd)) {
+                                    return 'Please enter a valid email address';
+                                  }
+                                  return null;
+                                }),
                             const SizedBox(
                               height: 18.0,
                             ),
@@ -171,14 +173,12 @@ class _SignInPageState extends State<SignInPage> {
                       padding: const EdgeInsets.only(left: 75, right: 75),
                       child: ElevatedButton(
                         onPressed: () {
-                          if (formKey1.currentState!.validate()) {
+                          if (formKey2.currentState!.validate()) {
                             Navigator.push(
                                 context,
                                 MaterialPageRoute(
-                                    builder: (context) => const SignUpPage()));
+                                    builder: (context) => const SignInPage()));
                           }
-                          // Navigator.push(context,
-                          //     MaterialPageRoute(builder: (context) => SignUp()));
                         },
                         style: ButtonStyle(
                           backgroundColor: MaterialStateProperty.all<Color>(
@@ -194,48 +194,13 @@ class _SignInPageState extends State<SignInPage> {
                           ),
                         ),
                         child: const Text(
-                          "Sign In",
+                          "Sign Up",
                           style: TextStyle(fontSize: 20.0, color: Colors.white),
                         ),
                       ),
                     ),
                     const SizedBox(
                       height: 20,
-                    ),
-                    Expanded(
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
-                          const Text(
-                            "If you are not registered",
-                            style: TextStyle(
-                              color: Colors.white,
-                              fontSize: 20,
-                            ),
-                          ),
-                          ElevatedButton(
-                            onPressed: () {
-                              Navigator.push(
-                                  context,
-                                  MaterialPageRoute(
-                                      builder: (context) =>
-                                          const SignUpPage()));
-                            },
-                            style: ButtonStyle(
-                              backgroundColor: MaterialStateProperty.all<Color>(
-                                Colors.transparent,
-                              ),
-                            ),
-                            child: const Text(
-                              "Sign Up",
-                              style: TextStyle(
-                                fontSize: 22.0,
-                                color: Color(0xFFFF7817),
-                              ),
-                            ),
-                          ),
-                        ],
-                      ),
                     ),
                   ],
                 ),
