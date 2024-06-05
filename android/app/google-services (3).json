@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "702000616537",
+    "project_id": "radiant-residencies-330a2",
+    "storage_bucket": "radiant-residencies-330a2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:702000616537:android:ea79d5d464116a80134d48",
+        "android_client_info": {
+          "package_name": "com.example.radiant_residencies_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAohxZDOKaQsZw7qfqmbNcpGWymstdNh1E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,9 +1,22 @@
+import 'package:firebase_core/firebase_core.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:radiant_residencies_app/contact_us.dart';
 import 'package:radiant_residencies_app/services.dart';
 import 'package:radiant_residencies_app/welcome_page.dart';
 
-void main() {
+Future main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  if (kIsWeb) {
+    await Firebase.initializeApp(
+        options: FirebaseOptions(
+            apiKey: "AIzaSyAuiDWAhkT25gKOBORJm-diQ2NKW3YdXwc",
+            appId: "1:702000616537:web:0a2184a802ed3e7a134d48",
+            messagingSenderId: "702000616537",
+            projectId: "radiant-residencies-330a2"));
+  }
+
+  await Firebase.initializeApp();
   runApp(const MyApp());
 }
 

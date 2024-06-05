@@ -62,7 +62,7 @@ class ServiceScreen extends StatelessWidget {
                 ),
                 ElevatedButton(
                     style: ElevatedButton.styleFrom(
-                      primary: Colors.transparent,
+                      backgroundColor: Colors.transparent,
                     ),
                     onPressed: () {
                       Navigator.push(
@@ -91,7 +91,8 @@ class ServiceScreen extends StatelessWidget {
                   height: 30,
                 ),
                 ElevatedButton(
-                  style: ElevatedButton.styleFrom(primary: Colors.transparent),
+                  style: ElevatedButton.styleFrom(
+                      backgroundColor: Colors.transparent),
                   onPressed: () {
                     Navigator.push(context,
                         MaterialPageRoute(builder: (context) => const Foods()));
@@ -119,7 +120,7 @@ class ServiceScreen extends StatelessWidget {
                 ),
                 ElevatedButton(
                   style: ElevatedButton.styleFrom(
-                    primary: Colors.transparent,
+                    backgroundColor: Colors.transparent,
                   ),
                   onPressed: () {
                     Navigator.push(context,
@@ -148,7 +149,7 @@ class ServiceScreen extends StatelessWidget {
                 ),
                 ElevatedButton(
                   style: ElevatedButton.styleFrom(
-                    primary: Colors.transparent,
+                    backgroundColor: Colors.transparent,
                   ),
                   onPressed: () {
                     Navigator.push(
